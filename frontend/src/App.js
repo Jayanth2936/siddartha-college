@@ -11,7 +11,7 @@ function App() {
         
         {/* Navigation Bar */}
         <nav style={{ backgroundColor: "#004080", padding: "20px 40px", display: "flex", justifyContent: "space-between", alignItems: "center", color: "white" }}>
-          <h2 style={{ margin: 0, fontSize: "1.8rem" }}>Siddartha Degree College</h2>
+          <h2 style={{ margin: 0, fontSize: "1.8rem" }}>Siddhartha Degree College</h2>
           <div style={{ display: "flex", gap: "25px" }}>
             <Link to="/" style={{ color: "white", textDecoration: "none", fontSize: "1.1rem", fontWeight: "bold" }}>Home</Link>
             <Link to="/courses" style={{ color: "white", textDecoration: "none", fontSize: "1.1rem", fontWeight: "bold" }}>Courses</Link>

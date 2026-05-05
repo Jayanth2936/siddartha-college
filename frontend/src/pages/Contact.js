@@ -7,7 +7,7 @@ function Contact() {
       <div style={{ marginTop: "30px", fontSize: "1.2rem", lineHeight: "2" }}>
         <p>📍 <strong>Address:</strong> Opposite Venkateshwara Swamy Temple, Near Old Bus Stand, Suryapet</p>
         <p>📞 <strong>Phone:</strong> 984971573, 9160736423</p>
-        <p>✉️ <strong>Email:</strong> Saidarao12@gmail.com</p>
+        <p>✉️ <strong>Email:</strong> siddharthagroup.org@gmail.com</p>
       </div>
     </div>
   );
