@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000")
+    fetch("https://siddarthacollegebackend-s0ywgf0j.b4a.run")
       .then(res => res.text())
       .then(data => setMessage(data))
       .catch(err => console.error("Error:", err)); // 👈 add this
