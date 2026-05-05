@@ -5,10 +5,7 @@ const nodemailer = require('nodemailer');
 const app = express();
 
 // 1. Explicitly allow your Vercel website to talk to this backend
-app.use(cors({
-  origin: 'https://siddartha-college.vercel.app', 
-  methods: ['GET', 'POST']
-}));
+app.use(cors()); // This allows requests from ANY website
 
 app.use(express.json()); 
 
