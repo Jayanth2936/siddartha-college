@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
@@ -14,7 +15,7 @@ const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'Saidarao12@gmail.com', 
-    pass: 'rpxuaehzzlrfewhb' // ⚠️ DON'T FORGET TO PASTE THIS AGAIN!
+    pass: process.env.EMAIL_PASS   // ← use this instead // ⚠️ DON'T FORGET TO PASTE THIS AGAIN!
   }
 });
 
@@ -55,7 +56,7 @@ app.get('/', (req, res) => {
 });
 
 // 4. The Dynamic Port Fix (Lets Back4App choose the port)
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 5000;  // ← change 8080 to 5000
 app.listen(PORT, () => {
   console.log(`Server is active on port ${PORT}`);
 });
