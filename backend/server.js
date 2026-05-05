@@ -56,7 +56,7 @@ app.get('/', (req, res) => {
 });
 
 // 4. The Dynamic Port Fix (Lets Back4App choose the port)
-const PORT = process.env.PORT || 5000;  // ← change 8080 to 5000
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server is active on port ${PORT}`);
 });
