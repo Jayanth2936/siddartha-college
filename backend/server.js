@@ -14,14 +14,16 @@ app.use(cors()); // This allows requests from ANY website
 app.use(express.json()); 
 
 // 2. Set up the Mailman
+// 2. Set up the Mailman (FIXED SMTP VERSION)
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  host: "smtp.gmail.com",
+  port: 587,
+  secure: false,
   auth: {
-    user: 'Saidarao12@gmail.com', 
-    pass: process.env.EMAIL_PASS   // ← use this instead // ⚠️ DON'T FORGET TO PASTE THIS AGAIN!
+    user: "Saidarao12@gmail.com",
+    pass: process.env.EMAIL_PASS
   }
 });
-
 // 3. The Route
 app.post("/api/apply", async (req, res) => {
   const { name, email, course } = req.body;
