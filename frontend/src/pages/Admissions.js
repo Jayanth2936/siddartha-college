@@ -10,7 +10,7 @@ function Admissions() {
 
     try {
       // ⚠️ Use your Back4App URL here. 
-      const response = await fetch("https://siddarthacollegebackend-772kh8fk.b4a.run/api/apply", {
+      const response = await fetch("https://siddarthacollegebackend-772kh8fk.b4a.run/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)

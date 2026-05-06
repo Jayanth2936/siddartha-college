@@ -20,7 +20,7 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false,
   auth: {
-    user: "Saidarao12@gmail.com",
+    user: "jayanthmylarishetty2003@gmail.com",
     pass: process.env.EMAIL_PASS
   }
 });
@@ -30,8 +30,8 @@ app.post("/api/apply", async (req, res) => {
 
   try {
     const mailOptions = {
-      from: 'Saidarao12@gmail.com',
-      to: 'siddharthagroup.org@gmail.com', 
+      from: 'jayanthmylarishetty2003@gmail.com',
+      to: 'jayanthmylarishetty22@gmail.com', 
       subject: `🎓 New Student Application: ${name}`,
       text: `
         You have a new inquiry for Siddartha Degree College!
