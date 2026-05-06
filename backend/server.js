@@ -1,8 +1,11 @@
 require('dotenv').config();
+
+// 👇 ADD THIS LINE
+console.log("EMAIL_PASS:", process.env.EMAIL_PASS);
+
 const express = require('express');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
-
 const app = express();
 
 // 1. Explicitly allow your Vercel website to talk to this backend
